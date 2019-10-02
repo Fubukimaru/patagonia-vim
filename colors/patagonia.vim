@@ -20,6 +20,7 @@ let s:no = 'none'
 
 let s:wh = 15 " White
 
+
 "theme
 let s:do = 145 "snow
 let s:re = 68 "blue
@@ -37,6 +38,8 @@ let s:g1 = 238
 
 "commentary
 let s:comm = 6 "Teal
+
+let s:sea = 12
 "ui
 let s:uih = 255  "ui foreground highlight
 let s:uif = s:g2 "ui foreground normal
@@ -63,7 +66,7 @@ exe "hi FoldColumn"   .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi LineNr"       .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi MatchParen"   .s:fg.s:mp  .s:bg.s:no  .s:st.'bold'
 exe "hi NonText"      .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
-exe "hi Search"       .s:fg.s:no  .s:bg.s:no  .s:st.'bold,underline'
+exe "hi Search"       .s:fg.s:wh  .s:bg.s:sea  .s:st.'bold,underline'
 exe "hi SignColumn"   .s:fg.s:no  .s:bg.s:no  .s:st.s:no
 exe "hi Special"      .s:fg.s:do  .s:bg.s:no  .s:st.s:no
 exe "hi SpecialChar"  .s:fg.s:la  .s:bg.s:no  .s:st.s:no
