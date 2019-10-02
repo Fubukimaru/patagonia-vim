@@ -9,7 +9,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "patagonia"
+let g:colors_name = "patagonia_f"
 
 " HELPERS
 " -------
@@ -18,6 +18,8 @@ let s:bg = ' ctermbg='
 let s:st = ' cterm='
 let s:no = 'none'
 
+let s:wh = 15 " White
+
 "theme
 let s:do = 145 "snow
 let s:re = 68 "blue
@@ -25,10 +27,14 @@ let s:mi = 140 "purple
 let s:fa = 117 "lightblue
 let s:sol = 85 "teal
 let s:la = 221 "orange
-let s:si = 186 "green-yellow
+let s:text = s:wh "green-yellow
+
 "gray
 let s:g2 = 244
 let s:g1 = 238
+
+"commentary
+let s:comm = 6 "Teal
 "ui
 let s:uih = 255  "ui foreground highlight
 let s:uif = s:g2 "ui foreground normal
@@ -39,16 +45,17 @@ let s:vb = s:re "visual background
 let s:err = 196 "red
 let s:wrn = 191 "yellow
 let s:mp = 46   "green
-let s:z0 = 'black'
+let s:z0 = 10 "'black'
+
 
 "ui
-exe "hi Normal"       .s:fg.s:si  .s:bg.s:no  .s:st.s:no
-exe "hi ColorColumn"  .s:fg.s:err .s:bg.s:no  .s:st.s:no
-exe "hi Comment"      .s:fg.s:g2  .s:bg.s:no  .s:st.s:no
+exe "hi Normal"       .s:fg.s:text  .s:bg.s:no  .s:st.s:no
+exe "hi ColorColumn"  .s:fg.s:text .s:bg.s:err  .s:st.s:no
+exe "hi Comment"      .s:fg.s:comm  .s:bg.s:no  .s:st.s:no
 exe "hi CursorColumn" .s:fg.s:no  .s:bg.s:z0  .s:st.s:no
 exe "hi CursorLine"   .s:fg.s:no  .s:bg.s:z0  .s:st.s:no
 exe "hi CursorLineNr" .s:fg.s:no  .s:bg.s:no  .s:st.'bold'
-exe "hi Error"        .s:fg.s:err .s:bg.s:no  .s:st.'reverse'
+exe "hi Error"        .s:fg.s:text .s:bg.s:err  .s:st.'reverse'
 exe "hi Folded"       .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi FoldColumn"   .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi LineNr"       .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
