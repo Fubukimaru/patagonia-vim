@@ -9,7 +9,7 @@ hi clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name = "patagonia_f"
+let g:colors_name = "patagonia"
 
 " HELPERS
 " -------
@@ -28,6 +28,8 @@ let s:fa = 117 "lightblue
 let s:sol = 85 "teal
 let s:la = 221 "orange
 let s:text = s:wh "green-yellow
+let s:title = s:sol "green-yellow
+let s:delim = 6
 
 "gray
 let s:g2 = 244
@@ -84,18 +86,24 @@ exe "hi Visual"       .s:fg.s:vf  .s:bg.s:vb  .s:st.s:no
 "exe hi WarningMsg
 
 "syntax
-exe "hi Character"    .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
-exe "hi Constant"     .s:fg.s:la  .s:bg.s:no  .s:st.s:no
-exe "hi Function"     .s:fg.s:re  .s:bg.s:no  .s:st.s:no
-exe "hi Identifier"   .s:fg.s:la  .s:bg.s:no  .s:st.s:no
-exe "hi Include"      .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
-exe "hi Operator"     .s:fg.s:sol .s:bg.s:no  .s:st.s:no
-exe "hi Macro"        .s:fg.s:do  .s:bg.s:no  .s:st.s:no
-exe "hi PreProc"      .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
-exe "hi Statement"    .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
-exe "hi StorageClass" .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
-exe "hi String"       .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
-exe "hi Type"         .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+exe "hi Character"          .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
+exe "hi Constant"           .s:fg.s:la  .s:bg.s:no  .s:st.s:no
+exe "hi Function"           .s:fg.s:re  .s:bg.s:no  .s:st.s:no
+exe "hi Identifier"         .s:fg.s:la  .s:bg.s:no  .s:st.s:no
+exe "hi Include"            .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
+exe "hi Operator"           .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+exe "hi Macro"              .s:fg.s:do  .s:bg.s:no  .s:st.s:no
+exe "hi PreProc"            .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
+exe "hi Statement"          .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
+exe "hi StorageClass"       .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
+exe "hi String"             .s:fg.s:fa  .s:bg.s:no  .s:st.s:no
+exe "hi Type"               .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+" Custom
+exe "hi Delimiter"          .s:fg.s:delim .s:bg.s:no  .s:st.s:no
+exe "hi Title"              .s:fg.s:title .s:bg.s:no  .s:st.s:no
+" exe "hi SpecialComment"     .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+" exe "hi Tag"                .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+" exe "hi Debug"                .s:fg.s:sol .s:bg.s:no  .s:st.s:no
 
 "js
 exe "hi jsClassDefinition" .s:fg.s:la  .s:bg.s:no  .s:st.'bold'
