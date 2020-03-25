@@ -61,7 +61,7 @@ exe "hi CursorColumn" .s:fg.s:no  .s:bg.s:z0  .s:st.s:no
 exe "hi CursorLine"   .s:fg.s:no  .s:bg.s:z0  .s:st.s:no
 exe "hi CursorLineNr" .s:fg.s:no  .s:bg.s:no  .s:st.'bold'
 exe "hi Error"        .s:fg.s:text .s:bg.s:err  .s:st.'reverse'
-exe "hi Folded"       .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
+exe "hi Folded"       .s:fg.s:do  .s:bg.s:no  .s:st.s:no
 exe "hi FoldColumn"   .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi LineNr"       .s:fg.s:g1  .s:bg.s:no  .s:st.s:no
 exe "hi MatchParen"   .s:fg.s:mp  .s:bg.s:no  .s:st.'bold'
@@ -77,7 +77,7 @@ exe "hi StatusLine"   .s:fg.s:uif .s:bg.s:uib .s:st.s:no
 exe "hi StatusLineNC" .s:fg.s:uif .s:bg.s:uib .s:st.s:no
 exe "hi TabLine"      .s:fg.s:uif .s:bg.s:uib .s:st.s:no
 exe "hi TabLineFill"  .s:fg.s:uif .s:bg.s:uib .s:st.s:no
-exe "hi TabLineSel"   .s:fg.s:uih .s:bg.s:no  .s:st.s:no
+exe "hi TabLineSel"   .s:fg.s:uih .s:bg.s:do  .s:st.s:no
 exe "hi Title"        .s:fg.s:no  .s:bg.s:no  .s:st.s:no
 exe "hi Todo"         .s:fg.s:wrn .s:bg.s:no  .s:st.'reverse'
 exe "hi VertSplit"    .s:fg.s:uif .s:bg.s:uib .s:st.s:no
