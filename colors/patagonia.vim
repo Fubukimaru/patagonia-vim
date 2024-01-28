@@ -121,3 +121,21 @@ exe "hi jsVariableDef"     .s:fg.s:la  .s:bg.s:no  .s:st.s:no
 exe "hi pythonFunction"  .s:fg.s:re  .s:bg.s:no  .s:st.s:no
 exe "hi pythonBuiltin"   .s:fg.s:do  .s:bg.s:no  .s:st.s:no
 exe "hi pythonAttribute" .s:fg.s:sol .s:bg.s:no  .s:st.s:no
+
+
+" Markdown
+exe "hi htmlH1"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi htmlH2"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi htmlH3"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi htmlH4"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi htmlH5"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi htmlH6"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+
+exe "hi markdownH1"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi markdownH2"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi markdownH3"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi markdownH4"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi markdownH5"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi markdownH6"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+
+
