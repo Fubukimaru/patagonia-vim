@@ -53,6 +53,9 @@ let s:mp = 46   "green
 let s:z0 = 10 "'black'
 
 
+"Headers
+let s:db = 4 "Dark blue
+
 "ui
 exe "hi Normal"       .s:fg.s:text  .s:bg.s:no  .s:st.s:no
 exe "hi ColorColumn"  .s:fg.s:text .s:bg.s:err  .s:st.s:no
@@ -124,18 +127,13 @@ exe "hi pythonAttribute" .s:fg.s:sol .s:bg.s:no  .s:st.s:no
 
 
 " Markdown
-exe "hi htmlH1"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi htmlH2"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi htmlH3"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi htmlH4"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi htmlH5"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi htmlH6"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi VimwikiHeader1"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
+exe "hi VimwikiHeader2"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
+exe "hi VimwikiHeader3"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
+exe "hi VimwikiHeader4"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
+exe "hi VimwikiHeader5"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
+exe "hi VimwikiHeader6"             .s:fg.s:no  .s:bg.s:db  .s:st.s:no
 
-exe "hi markdownH1"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi markdownH2"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi markdownH3"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi markdownH4"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi markdownH5"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
-exe "hi markdownH6"             .s:fg.s:re  .s:bg.s:fa  .s:st.s:no
+exe "hi VimwikiHeaderChar"          .s:fg.s:mi  .s:bg.s:db  .s:st.s:no
 
-
+exe "hi VimwikiList"                .s:fg.s:mi  .s:bg.s:no  .s:st.s:no
