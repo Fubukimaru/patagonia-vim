@@ -54,7 +54,8 @@ let s:z0 = 10 "'black'
 
 
 "Headers
-let s:db = 4 "Dark blue
+let s:db = 18 "Dark blue
+let s:lb = 4 "ligth blue
 
 "ui
 exe "hi Normal"       .s:fg.s:text  .s:bg.s:no  .s:st.s:no
@@ -128,12 +129,12 @@ exe "hi pythonAttribute" .s:fg.s:sol .s:bg.s:no  .s:st.s:no
 
 " Markdown
 exe "hi VimwikiHeader1"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
-exe "hi VimwikiHeader2"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
-exe "hi VimwikiHeader3"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
-exe "hi VimwikiHeader4"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
-exe "hi VimwikiHeader5"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
-exe "hi VimwikiHeader6"             .s:fg.s:no  .s:bg.s:db  .s:st.'bold'
+exe "hi VimwikiHeader2"             .s:fg.s:no  .s:bg.s:lb  .s:st.'bold'
+exe "hi VimwikiHeader3"             .s:fg.s:no  .s:bg.s:lb  .s:st.'bold'
+exe "hi VimwikiHeader4"             .s:fg.s:no  .s:bg.s:lb  .s:st.'bold'
+exe "hi VimwikiHeader5"             .s:fg.s:no  .s:bg.s:lb  .s:st.'bold'
+exe "hi VimwikiHeader6"             .s:fg.s:no  .s:bg.s:lb  .s:st.'bold'
 
-exe "hi VimwikiHeaderChar"          .s:fg.s:mi  .s:bg.s:db  .s:st.'bold'
+exe "hi VimwikiHeaderChar"          .s:fg.s:mi  .s:bg.s:no  .s:st.'bold'
 
 exe "hi VimwikiList"                .s:fg.s:mi  .s:bg.s:no  .s:st.'bold'
